@@ -1,5 +1,5 @@
 {
-  "name": "@pauleliet/winston-pg-native",
+  "name": "@albertcrowley/winston-pg-native",
   "description": "A Winston transport for PostgreSQL. Uses high performance of native bindings.",
   "version": "4.4.0",
   "keywords": [
