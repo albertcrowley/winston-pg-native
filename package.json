@@ -20,7 +20,9 @@
   },
   "scripts": {
     "test": "nyc --reporter=text --reporter lcov npm run test:mocha",
-    "test:mocha": "mocha test/*.js test/**/*.js --exit"
+    "test:mocha": "mocha test/*.js test/**/*.js --exit",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "license": "MIT",
   "repository": {
@@ -36,9 +38,10 @@
     "abstract-winston-transport": "^0.5.1",
     "flatted": "^2.0.0",
     "moment": "^2.23.0",
+    "node-sql-2": "^0.79.0",
     "pg": "^7.8.0",
     "pg-native": "^3.0.0",
-    "node-sql-2": "^0.79.0",
+    "snyk": "^1.338.0",
     "winston": "^3.0.0",
     "winston-transport": "^4.3.0"
   },
@@ -55,5 +58,6 @@
   },
   "engines": {
     "node": ">= 6.0.0"
-  }
+  },
+  "snyk": true
 }
